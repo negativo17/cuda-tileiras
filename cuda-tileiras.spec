@@ -8,7 +8,7 @@
 
 Name:           %(echo %real_name | tr '_' '-')
 Epoch:          1
-Version:        13.2.51
+Version:        13.3.36
 Release:        1%{?dist}
 Summary:        NVIDIA CUDA TileIR
 License:        CUDA Toolkit
@@ -48,6 +48,9 @@ install -p -m 0755 -D bin/tileiras %{buildroot}%{_bindir}/tileiras
 %{_bindir}/tileiras
 
 %changelog
+* Wed Jul 22 2026 Simone Caronni <negativo17@gmail.com> - 1:13.3.36-1
+- Update to 13.3.36.
+
 * Thu Mar 19 2026 Simone Caronni <negativo17@gmail.com> - 1:13.2.51-1
 - Update to 13.2.51.
 
